@@ -1,0 +1,42 @@
+/* Global style */
+body {
+    background-color: #088F8F;
+    font-family: "Titillium Web", sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+.control-center {
+    text-align: center;
+}
+
+button {
+    padding: 20px;
+    margin: 5px;
+}
+
+.control-btn {
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+#player-area {
+    background-color: rgb(156, 13, 156);
+    float: left;
+    width: 45%;
+    margin: 20px;
+}
+#cpu-area {
+    background-color: rgb(156, 13, 156);
+    float: right;
+    width: 45%;
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+    margin: 20px;
+}
