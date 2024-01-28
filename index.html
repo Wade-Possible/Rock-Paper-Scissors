@@ -15,30 +15,32 @@
         <h1 class="heading">
             <img src="/assets/images/logo-jk.png" alt="logo">
         </h1>
-        <p>Rock, Paper, Scissors</p>
     </header>
     <main>
+
         <!--game control, choose between the 3 different buttons to play the game-->
         <div class="control-center">
-            <p>Make a choice: </p>
-            <button aria-label="rock" data-choice="0" class="rock-btn control-btn">Rock</button>
-            <button aria-label="paper" data-choice="1" class="paper-btn control-btn">Paper</button>
-            <button aria-label="sicssors" data-choice="2" class="sicssors-btn control-btn">Sicssors</button>
+            <h3>Make a choice: </h3>
+            <button aria-label="Rock" data-choice="0" class="rock-btn control-btn">Rock</button>
+            <button aria-label="Paper" data-choice="1" class="paper-btn control-btn">Paper</button>
+            <button aria-label="Scissors" data-choice="2" class="scissors-btn control-btn">Scissors</button>
         </div>
 
         <!--two screens to display the player and cpu's choices-->
         <div class="game-area">
             <div id="player-area">
                 <h3 class="scores">Player <span id="player-points">0</span></h3>
-
+                <img src="/assets/images/rock-paper-scissors-png.png" alt="rock-paper-scissors" id="player-image">
             </div>
             <div id="message"></div>
             <div id="cpu-area">
-                <h3 class="scores">Player <span id="player-points">0</span></h3>
+                <h3 class="scores">CPU <span id="cpu-points">0</span></h3>
+                <img src="/assets/images/rock-paper-scissors-png.png" alt="rock-paper-scissors" id="cpu-image">
             </div>
         </div>
         
     </main>
+    <!--footer where we have the rules-->
     <footer>
         <h3>Rules</h3>
         <p>Rock beats sicssors | Paper beats rock | Sicssors beats paper.</p>

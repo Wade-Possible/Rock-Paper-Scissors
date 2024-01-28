@@ -2,6 +2,7 @@
 body {
     background-color: #088F8F;
     font-family: "Titillium Web", sans-serif;
+    
 }
 
 header {
@@ -13,14 +14,36 @@ header {
 }
 
 button {
-    padding: 20px;
+    width: 150px;
+    height: 40px;
     margin: 5px;
+    font-family: "Titillium Web", sans-serif;
 }
 
 .control-btn {
     font-size: 20px;
     text-align: center;
-    
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.game-area {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    text-align: center;
+}
+
+#player-image {
+    width: 75%;
+    padding-bottom: 40px;
+
+}
+
+#cpu-image {
+    width: 75%;
+    padding-bottom: 40px;
 }
 
 #player-area {
@@ -37,6 +60,9 @@ button {
 }
 
 footer {
+    position: absolute;
     text-align: center;
-    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    bottom: 0;
 }
