@@ -23,8 +23,16 @@ button {
 .control-btn {
     font-size: 20px;
     text-align: center;
-    font-size: 19px;
     font-weight: bold;
+}
+
+#messages {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
 }
 
 .game-area {
@@ -37,26 +45,30 @@ button {
 
 #player-image {
     width: 75%;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 
 }
 
 #cpu-image {
     width: 75%;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
+    
 }
+
 
 #player-area {
     background-color: rgb(156, 13, 156);
     float: left;
     width: 45%;
     margin: 20px;
+    padding-bottom: 40px;
 }
 #cpu-area {
     background-color: rgb(156, 13, 156);
     float: right;
     width: 45%;
     margin: 20px;
+    padding-bottom: 40px;
 }
 
 footer {
@@ -65,4 +77,5 @@ footer {
     padding: 20px;
     box-sizing: border-box;
     bottom: 0;
+    
 }

@@ -1,53 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!--google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <title>Janken</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1 class="heading">
-            <img src="/assets/images/logo-jk.png" alt="logo">
-        </h1>
+      <h1 class="heading">
+        <img src="/assets/images/logo-jk.png" alt="logo" />
+      </h1>
     </header>
     <main>
+      <!--game control, choose between the 3 different buttons to play the game-->
+      <div class="control-center">
+        <h3>Make a choice:</h3>
+        <button aria-label="Rock" data-choice="0" class="control-btn">
+          Rock
+        </button>
+        <button aria-label="Paper" data-choice="1" class="control-btn">
+          Paper
+        </button>
+        <button aria-label="Scissors" data-choice="2" class="control-btn">
+          Scissors
+        </button>
+      </div>
 
-        <!--game control, choose between the 3 different buttons to play the game-->
-        <div class="control-center">
-            <h3>Make a choice: </h3>
-            <button aria-label="Rock" data-choice="0" class="control-btn">Rock</button>
-            <button aria-label="Paper" data-choice="1" class="control-btn">Paper</button>
-            <button aria-label="Scissors" data-choice="2"class="control-btn">Scissors</button>
+      <div id="messages">YOU WIN!</div>
+
+      <!--two screens to display the player and cpu's choices-->
+      <div class="game-area">
+        <div id="player-area">
+          <h3 class="scores">Player <span id="player-points">0</span></h3>
+          <img
+            src="/assets/images/rock-paper-scissors.png"
+            alt="rock-paper-scissors"
+            id="player-image"
+          />
         </div>
 
-        <!--two screens to display the player and cpu's choices-->
-        <div class="game-area">
-            <div id="player-area">
-                <h3 class="scores">Player <span id="player-points">0</span></h3>
-                <img src="/assets/images/rock-paper-scissors-png.png" alt="rock-paper-scissors" id="player-image">
-            </div>
-            <div id="message"></div>
-            <div id="cpu-area">
-                <h3 class="scores">CPU <span id="cpu-points">0</span></h3>
-                <img src="/assets/images/rock-paper-scissors-png.png" alt="rock-paper-scissors" id="cpu-image">
-            </div>
+        <div id="cpu-area">
+          <h3 class="scores">Cpu <span id="cpu-points">0</span></h3>
+          <img
+            src="/assets/images/rock-paper-scissors.png"
+            alt="rock-paper-scissors"
+            id="cpu-image"
+          />
         </div>
-        
+      </div>
     </main>
+
     <!--footer where we have the rules-->
     <footer>
-        <h3>Rules</h3>
-        <p>Rock beats sicssors | Paper beats rock | Sicssors beats paper.</p>
+      <h3>Rules</h3>
+      <p>Rock beats sicssors | Paper beats rock | Sicssors beats paper.</p>
     </footer>
+
     <!--font awesome for icons-->
-    <script src="https://kit.fontawesome.com/875e0110ba.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/875e0110ba.js"
+      crossorigin="anonymous"
+    ></script>
     <!--javascript conection-->
-   <script src="/assets/js/script.js"></script> 
-</body>
+    <script src="/assets/js/script.js"></script>
+  </body>
 </html>
